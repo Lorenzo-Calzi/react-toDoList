@@ -47,7 +47,7 @@ const TodoList = () => {
         <div>
             <div className="header d-flex justify-content-center align-items-center">
                 <h3 class="title">To do list</h3>
-                <button className="button m-5" onClick = {() => setModal(true)}>Create Task</button>
+                <button className="button " onClick = {() => setModal(true)}>Create Task</button>
             </div>
 
             <div className="main d-flex align-content-center">
