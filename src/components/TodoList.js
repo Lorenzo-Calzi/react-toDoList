@@ -51,7 +51,7 @@ const TodoList = () => {
             </div>
 
             <div className="main d-flex align-content-center">
-                <div className="container d-flex flex-wrap justify-content-center ">
+                <div className="container d-flex flex-wrap justify-content-center">
                     {taskList.map((obj, index) => <Card taskObj = {obj} index = {index} 
                     deleteTask = {deleteTask} updateListArray = {updateListArray} />)}
                 </div>

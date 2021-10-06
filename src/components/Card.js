@@ -40,15 +40,15 @@ const Card = ({taskObj, index, deleteTask, updateListArray}) => {
     }
 
     return (
-        <div class="card m-3 p-3" style={{"border-color": colors[index%5].primaryColor}}>
+        <div class="card m-3 p-3" style={{"border-color": colors[index%5].primaryColor}} onClick = {() => setModal(true)}>
             <h3>{taskObj.Name}</h3>
             <p>{taskObj.Description}</p>
 
             <div class="d-flex align-content-center justify-content-end">
-                <i class="fas fa-edit m-2" style={{"color": colors[index%5]
+                <i class="fas fa-edit" style={{"color": colors[index%5]
                 .primaryColor}} onClick = {() => setModal(true)}></i>
 
-                <i class="fas fa-trash m-2" style={{"color": colors[index%5]
+                <i class="fas fa-trash" style={{"color": colors[index%5]
                 .primaryColor}} onClick = {handleDelete} ></i>
             </div>
 
