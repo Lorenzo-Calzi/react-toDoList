@@ -52,10 +52,10 @@ const TodoList = () => {
 
             <div className="main d-flex align-content-center">
                 <div className="container d-flex flex-wrap justify-content-center">
-                    {taskList.map((obj, index) => <Card taskObj = {obj} index = {index} 
+                    {taskList && taskList.map((obj, index) => <Card taskObj = {obj} index = {index} 
                     deleteTask = {deleteTask} updateListArray = {updateListArray} />)}
                 </div>
-            </div>
+            </div>  
             <NewTask toggle = {toggle} modal = {modal} save={saveTask}/>
         </div>
     );
